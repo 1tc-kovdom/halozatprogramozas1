@@ -43,5 +43,21 @@ for i in range (1, 11):
 
     print()
 
+# Hány számot akarunk bekérni?
+# db=int(input("Hány számot szeretnél megadni? : "))
+# osszeg = 0
+# for i in range(db):
+#     szam=int(input(f"{i+1}. szám: "))
+#     osszeg+=szam
 
-    
+# print("A számok összege amiket bekértél:", osszeg)
+
+# Kérjünk be számokat és adjuk meg az összegüket!
+# 1 0 végjelig
+# 2 enter végjelig  <-- HF
+osszeg=0
+bekert_szam=1
+while bekert_szam !=0:
+    bekert_szam=int(input("Kérem a számot: "))
+    osszeg+=bekert_szam
+print(osszeg)
