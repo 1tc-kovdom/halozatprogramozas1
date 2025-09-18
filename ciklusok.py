@@ -55,9 +55,18 @@ for i in range (1, 11):
 # Kérjünk be számokat és adjuk meg az összegüket!
 # 1 0 végjelig
 # 2 enter végjelig  <-- HF
+
+# osszeg=0
+# bekert_szam=1
+# while bekert_szam !=0:
+#     bekert_szam=int(input("Kérem a számot: "))
+#     osszeg+=bekert_szam
+# print(osszeg)
 osszeg=0
-bekert_szam=1
-while bekert_szam !=0:
-    bekert_szam=int(input("Kérem a számot: "))
-    osszeg+=bekert_szam
-print(osszeg)
+while True:
+    be = input("Kérem a számot, enter megnyomávásal kilépsz. : ")
+    if be=="":
+        break   #ezzel kilép a ciklusból
+    print("Ezt írtad be:", be)
+
+print("vége")
